@@ -1,0 +1,12 @@
+#version 330 core
+// 位置变量的属性值为 0
+layout (location = 0) in vec3 aPos;
+
+// 为片段着色器指定一个输出
+out vec4 vertex_color;
+
+void main() {
+  gl_Position = vec4(aPos, 1.0);
+  // 暗红色
+  vertex_color = vec4(0.5, 0.0, 0.0, 1.0);
+}

@@ -44,6 +44,11 @@ int main(void) {
 		return -1;
 	}
 
+	int nrAttributes;
+	glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttributes);
+
+	std::cout << "Maxmium nr of vertex attributes supported: " << nrAttributes << std::endl;
+
 	// build and compile our shader program
 	// vertex shader
 	unsigned int vertexShader = glCreateShader(GL_VERTEX_SHADER);
