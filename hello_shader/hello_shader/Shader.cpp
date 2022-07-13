@@ -22,7 +22,7 @@ Shader::Shader(const std::string& vertex_path, const std::string& fragment_path)
 		fragment_code = f_shader_stream.str();
 	}
 	catch (std::ifstream::failure e) {
-		std::cout << "ERROR: failed to read shader file." << std::endl;
+		std::cout << "ERROR: failed to read shader file. vertex path: " << vertex_path << " fragment shader: " << fragment_path << std::endl;
 	}
 
 	const char* v_shader_code = vertex_code.c_str();
@@ -66,4 +66,8 @@ Shader::Shader(const std::string& vertex_path, const std::string& fragment_path)
 
 void Shader::use() {
 	glUseProgram(_id);
+}
+
+void Shader::unuse() {
+	glDeleteProgram(_id);
 }

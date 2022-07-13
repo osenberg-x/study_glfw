@@ -16,6 +16,7 @@ public:
 	~Shader() = default;
 
 	void use();
+	void unuse();
 
 	// uniform
 	void set_uniform_bool(const std::string& name, bool value) const {
@@ -28,6 +29,10 @@ public:
 
 	void set_uniform_float(const std::string& name, float value) const {
 		glUniform1f(glGetUniformLocation(_id, name.c_str()), static_cast<float>(value));
+	}
+
+	void set_uniform_4float(const std::string& name, float value) const {
+		glUniform4f(glGetUniformLocation(_id, name.c_str()), 0.0f, value, 0.0f, 1.0f);
 	}
 };
 
