@@ -1,5 +1,7 @@
 glfw_first/.vs
 hello_triangle/.vs
+hello_triangle\hello_triangle\x64
+hello_triangle\x64
 hello_shader/.vs
 hello_shader/x64
 hello_shader/hello_shader/x64
