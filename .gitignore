@@ -5,3 +5,6 @@ hello_triangle\x64
 hello_shader/.vs
 hello_shader/x64
 hello_shader/hello_shader/x64
+hello_texture/.vs
+hello_texture/x64
+hello_texture/hello_texture/x64
