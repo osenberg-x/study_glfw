@@ -8,3 +8,6 @@ hello_shader/hello_shader/x64
 hello_texture/.vs
 hello_texture/x64
 hello_texture/hello_texture/x64
+hello_transformations/.vs
+hello_transformations/x64
+hello_transformations/hello_transformations/x64
